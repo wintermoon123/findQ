@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="找问卷 —— 面向心理学、社会学、社会工作等社会科学专业学生的专业问卷、量表与社会调查检索平台。">
+  <title>找问卷 · 社会科学问卷与量表检索</title>
+  <link rel="icon" type="image/png" href="search.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#/" aria-label="找问卷首页">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="search.png" alt="">
+        </span>
+        <span class="brand-text">
+          <strong>找问卷</strong>
+          <small>社会科学研究工具库</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="主导航">
+        <a href="#/" data-route="home">发现问卷</a>
+        <a href="#/favorites" data-route="favorites">我的收藏 <span class="nav-count" id="favCount" hidden>0</span></a>
+        <a href="#/compare" data-route="compare">问卷对比 <span class="nav-count" id="cmpCount" hidden>0</span></a>
+        <a href="#/about" data-route="about">关于</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <div class="compare-bar" id="compareBar" aria-live="polite"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <strong class="footer-brand">找问卷</strong>
+        <p>让每一次研究，都从找到合适的工具开始。</p>
+      </div>
+      <div class="footer-note">
+        <p>本站为课程设计演示项目，收录信息经简化整理，仅供学习参考。</p>
+        <p>正式研究请以原版量表、原始文献及版权授权渠道为准。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
